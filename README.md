@@ -20,6 +20,10 @@ The DApp User Interface when running should look like...
 
 ![truffle test](images/activity.png)
 
+![truffle test](images/classes.png)
+
+![truffle test](images/class.png)
+
 
 
 ## Getting Started
