@@ -56,7 +56,7 @@ npm install
 Launch Ganache:
 
 ```
-ganache-cli -m "during report attitude sort group discover under neck affair local airport tired"
+ganache-cli -m "spirit supply whale amount human item harsh scare congress discover talent hamster"
 ```
 
 Your terminal should look something like this:
@@ -104,18 +104,15 @@ npm run dev
 ## Built With
 
 * [Ethereum](https://www.ethereum.org/) - Ethereum is a decentralized platform that runs smart contracts
-* [IPFS](https://ipfs.io/) - IPFS is the Distributed Web | A peer-to-peer hypermedia protocol
-to make the web faster, safer, and more open.
 * [Truffle Framework](http://truffleframework.com/) - Truffle is the most popular development framework for Ethereum with a mission to make your life a whole lot easier.
 
 
-## Authors
 
-See also the list of [contributors](https://github.com/your/project/contributors.md) who participated in this project.
 
 ## Acknowledgments
 
-* Solidity
-* Ganache-cli
-* Truffle
-* IPFS
+* Solidity 0.4.24
+* web3 1.5.2
+* Ganache-cli v6.12.2(ganache-core: 2.13.2)
+* Truffle v4.1.14
+* truffle-hdwallet-provider 1.0.17
