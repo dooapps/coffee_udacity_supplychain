@@ -14,7 +14,7 @@ contract('SupplyChain', function(accounts) {
     const originFarmLongitude = "144.341490"
     var productID = sku + upc
     const productNotes = "Best beans for Espresso"
-    const productPrice = web3.toWei(1, "ether")
+    const productPrice = web3.toWei(".00000001", "ether")
     var itemState = 0
     const distributorID = accounts[2]
     const retailerID = accounts[3]
@@ -185,7 +185,7 @@ contract('SupplyChain', function(accounts) {
         })   
 
         // Mark an item as Sold by calling function buyItem()
-        await supplyChain.buyItem(upc, {from: distributorID, value:  web3.toWei("2", "ether")})
+        await supplyChain.buyItem(upc, {from: distributorID, value:  web3.toWei(".00000001", "ether")})
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
         const res = await supplyChain.fetchItemBufferTwo.call(upc)
