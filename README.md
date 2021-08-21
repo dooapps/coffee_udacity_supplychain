@@ -138,6 +138,35 @@ Your terminal should look something like this:
 
 ![truffle test](images/truffle_migrate.png)
 
+
+Running migration: 1_initial_migration.js
+  Replacing Migrations...
+  ... 0xa6a290c9c381c2827398bdffd2a2b33c19b4cabc363df9398c68896044deaeb0
+  Migrations: 0xfcc61672aefd43d26c06eece753df5bdeebc4231
+Saving successful migration to network...
+  ... 0x414fcd544644d6feede698d8ab5ead98c2f1d6daaa03f4bd4f24cbca59055a9c
+Saving artifacts...
+Running migration: 2_deploy_contracts.js
+  Replacing FarmerRole...
+  ... 0x14f8994a366457d6f3caa0120742f95672acae95028de408ace6377b2065f3a4
+  FarmerRole: 0xb7c03e3cbb506acbd5507a2422d82cbcf0d3abd4
+  Replacing DistributorRole...
+  ... 0x4a53a97c3cda58fa385815176bbff9871ef36987b4ccc41faefd97ec5327ffe2
+  DistributorRole: 0xf4e9b7be10e2400f44e61cde872f4594c696a499
+  Replacing RetailerRole...
+  ... 0x5fd5e3231ad1ae65c7f32d9f6408bbc1549dbe632957f07bc4db5b0ea2787a2a
+  RetailerRole: 0xd6df45f9164454cb88200ae0d2df98a8bd2b14f2
+  Replacing ConsumerRole...
+  ... 0xff0b6d5b82b725d528524bd9091812eb15051d246f4f1d3638ea0b7eb7947ed3
+  ConsumerRole: 0x59fed39a8e400fcd0cc90a53818db734e9b28ba7
+  Replacing SupplyChain...
+  ... 0x530d4ef8b319c3591b289f91d99963482a2645e8dfd374d968fb17026437039c
+  SupplyChain: 0xbc7af03aa3a689cfeeee62090e097a63779192b9
+Saving successful migration to network...
+  ... 0x434409c1ccdfc90eec5ae3cc6d19698d305211c8472980fbd072c7afd213d63e
+Saving artifacts...
+
+
 Test smart contracts:
 
 ```
