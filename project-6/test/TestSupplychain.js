@@ -58,10 +58,8 @@ contract('SupplyChain', function(accounts) {
     it("Testing smart contract function harvestItem() that allows a farmer to harvest coffee", async() => {
         const supplyChain = await SupplyChain.deployed()
 
-        await supplyChain.addFarmer(originFarmerID);
-        await supplyChain.addDistributor(distributorID);
-        await supplyChain.addRetailer(retailerID);
-        await supplyChain.addConsumer(consumerID);
+        
+
        
         // Declare and Initialize a variable for event
         var eventEmitted = false
@@ -97,6 +95,7 @@ contract('SupplyChain', function(accounts) {
     it("Testing smart contract function processItem() that allows a farmer to process coffee", async() => {
         const supplyChain = await SupplyChain.deployed()
         
+        await supplyChain.addFarmer(originFarmerID);
         // Declare and Initialize a variable for event
         var event = supplyChain.Processed()
         // Watch the emitted event Processed()
@@ -175,7 +174,8 @@ contract('SupplyChain', function(accounts) {
     // 5th Test
     it("Testing smart contract function buyItem() that allows a distributor to buy coffee", async() => {
         const supplyChain = await SupplyChain.deployed()
-        
+        await supplyChain.addDistributor(distributorID);
+
 
         // Declare and Initialize a variable for event
         var event = supplyChain.Sold()
@@ -228,6 +228,8 @@ contract('SupplyChain', function(accounts) {
     // 7th Test
     it("Testing smart contract function receiveItem() that allows a retailer to mark coffee received", async() => {
         const supplyChain = await SupplyChain.deployed()
+        await supplyChain.addRetailer(retailerID);
+
         
         // Declare and Initialize a variable for event
         var event = supplyChain.Received()
@@ -254,7 +256,7 @@ contract('SupplyChain', function(accounts) {
     // 8th Test
     it("Testing smart contract function purchaseItem() that allows a consumer to purchase coffee", async() => {
         const supplyChain = await SupplyChain.deployed()
-        
+        await supplyChain.addConsumer(consumerID);
         
         // Declare and Initialize a variable for event
         var event = supplyChain.Purchased()
